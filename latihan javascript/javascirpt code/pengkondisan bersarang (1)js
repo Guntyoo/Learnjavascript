@@ -1,0 +1,41 @@
+//membuat pengkondisian bersarang menggunakan *
+//buat var string dengan nilai string kosong
+var s = "";
+//pengulangan
+ for (var i = 0; i < 2; i++) {
+    //j setiap membuat * ke samping sampai .. 
+  for (var j = 0; j < 5; j++) {
+    s += "*";
+  }
+  //membuat baris ke bawah
+  s += "\n";
+} 
+// tampilkan
+console.log(s); 
+// hasilnya adalah
+// *****
+// *****
+
+for ( var i = 0; i < 3; i++) {
+    // 0 < 0 false jadi 0 lebih kecil sama dengan (<=) true
+    for (var j = 0; j <= i; j++) {
+        s += '*';
+    } s += '\n';
+}
+ console.log (s); 
+// maka hasilnya 
+// *
+// **
+// ***
+
+ for ( var i = 10 ; i > 0; i--) {
+    for (var j = 0; j < i; j++) {
+         s += "*"
+    }
+       s += '\n'
+ }
+ console.log (s)
+// maka hasilnya
+// ***
+// **
+// *
