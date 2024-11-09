@@ -1,3 +1,4 @@
+//make chess game with JS
 // let sama saja kaya var
 let n = 5 // garis vertikal
 let string = ""
