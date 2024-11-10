@@ -1,3 +1,4 @@
+//membuat program  tentang angkot
 var jumlah = 10;
 var Aktif = 6;
 var lembur = 5;
