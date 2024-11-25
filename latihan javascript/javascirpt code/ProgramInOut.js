@@ -1,4 +1,4 @@
-//membuat program resposive angkot
+//membuat program resposive puskesmas
 var customer = ["agung", undefined, "tyo"];
 var tambahcustomer = function (namacustomer, customer) {
   //jika angkot terisi
