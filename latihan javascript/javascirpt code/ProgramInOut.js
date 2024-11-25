@@ -1,4 +1,4 @@
-//membuat program resposive puskesmas
+//membuat program resposive antrian pasien puskesmas
 var customer = ["agung", undefined, "tyo"];
 var tambahcustomer = function (namacustomer, customer) {
   //jika angkot terisi
@@ -18,9 +18,12 @@ var tambahcustomer = function (namacustomer, customer) {
         return customer;
       }
       //jika sudah ada nama customer yang sama
-      //maka tampilkan kesalahan
-      //return value & keluar if
-
+      else if (customer[i] == namacustomer) {
+        //maka tampilkan kesalahan
+        console.log(namacustomer +"  nama sudah tersedia!");
+        //return value & keluar if
+        return customer;
+      }
       //jika ada kursi kosong
       //jika sudah ditelusuri sampai akhir tetapi ada kursi kosong dan kursi terakhir sudah terisi
       else if (i == customer.length - 1) {
