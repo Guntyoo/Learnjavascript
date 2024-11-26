@@ -1,5 +1,5 @@
 //membuat program resposive antrian pasien puskesmas
-var customer = ["agung", undefined, "tyo"];
+var customer = [];
 var tambahcustomer = function (namacustomer, customer) {
   //jika angkot terisi
   if (customer.length == 0) {
@@ -20,7 +20,7 @@ var tambahcustomer = function (namacustomer, customer) {
       //jika sudah ada nama customer yang sama
       else if (customer[i] == namacustomer) {
         //maka tampilkan kesalahan
-        console.log(namacustomer +"  nama sudah tersedia!");
+        console.log(namacustomer + "  nama sudah tersedia!");
         //return value & keluar if
         return customer;
       }
@@ -34,4 +34,26 @@ var tambahcustomer = function (namacustomer, customer) {
       }
     }
   }
+};
+//delete customer
+var hapuscustomer = function (namacustomer, customer) {
+  if (customer.length == 0) {
+    console.log("kursi masih kosong!");
+    return customer;
+  } else {
+    //menelusuri kembali kursi kosong menggunakan looping
+    for (var i = 0; i < customer.length; i++) {
+      //jika nama customer sama tampilkan kesalahan
+      if (customer[i] == namacustomer) {
+        customer[i] = undefined;
+        return customer;
+      }
+      // menelusuri penumpang sampai akhir
+      else if (i == customer.length - 1) {
+        //jika nama tidak terdata maka tampilkan kesalahan
+        console.log(namacustomer + " nama tidak tersedia");
+      }
+    }
+  }
+  return customer;
 };
