@@ -53,4 +53,4 @@ function Siswa (nama,umur,sekolah) {
 }
 // untuk cara memanggil constructur function
 // Keyword NEW menandakan constructur function jika tidak memasuka keyword new maka js mengenalkan sebagai constructur
- var siswa3 = new siswa ('kitting',17,'SMK widya nusantara');
+var siswa3 = new siswa ('kitting',17,'SMK widya nusantara');
