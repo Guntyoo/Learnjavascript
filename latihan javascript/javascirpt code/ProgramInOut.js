@@ -43,7 +43,7 @@ var hapuscustomer = function (namacustomer, customer) {
   } else {
     //menelusuri kembali kursi kosong menggunakan looping
     for (var i = 0; i < customer.length; i++) {
-      //jika nama customer sama tampilkan kesalahan
+      //delete customer
       if (customer[i] == namacustomer) {
         customer[i] = undefined;
         return customer;
