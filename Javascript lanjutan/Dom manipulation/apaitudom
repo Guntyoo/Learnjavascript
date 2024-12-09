@@ -1,0 +1,43 @@
+The HTML DOM (Document Object Model)
+When a web page is loaded, the browser creates a Document Object Model of the page.
+
+ With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+>JavaScript can change all the HTML elements in the page
+>JavaScript can change all the HTML attributes in the page
+>JavaScript can change all the CSS styles in the page
+>JavaScript can remove existing HTML elements and attributes
+>JavaScript can add new HTML elements and attributes
+>JavaScript can react to all existing HTML events in the page
+>JavaScript can create new HTML events in the page
+
+ What You Will Learn
+In the next chapters of this tutorial you will learn:
+
+How to change the content of HTML elements
+How to change the style (CSS) of HTML elements
+How to react to HTML DOM events
+How to add and delete HTML elements
+
+HTML DOM (Model Objek Dokumen)
+Saat halaman web dimuat, browser membuat Model Objek Dokumen halaman tersebut.
+ 
+ Dengan model objek, JavaScript mendapatkan semua kekuatan yang dibutuhkan untuk membuat HTML dinamis:
+
+>JavaScript dapat mengubah semua elemen HTML di halaman
+>JavaScript dapat mengubah semua atribut HTML di halaman
+>JavaScript dapat mengubah semua gaya CSS di halaman
+>JavaScript dapat menghapus elemen dan atribut HTML yang ada
+>JavaScript dapat menambahkan elemen dan atribut HTML baru
+>JavaScript dapat bereaksi terhadap semua peristiwa HTML yang ada di halaman
+>JavaScript dapat membuat acara HTML baru di halaman
+ 
+ Apa yang Akan Anda Pelajari
+Dalam bab selanjutnya dari tutorial ini Anda akan belajar:
+
+Cara mengubah konten elemen HTML
+Cara mengubah gaya (CSS) elemen HTML
+Bagaimana bereaksi terhadap peristiwa HTML DOM
+Cara menambah dan menghapus elemen HTML
+
+
+(src:https://www.w3schools.com/js/js_htmldom.asp)
