@@ -1,0 +1,13 @@
+DOM (Document Object Model)adalah "antarmuka" pemrograman berbasis "OBJECT" yang mempresentasikan dokumen web
+"antarmuka" yaitu hubungan browser dengan html lalu dijadikan sebuah oject menggunakan Javascript
+
+DOM membuat seluruh komponen dari halaman web dapat diakses & dimanipulasi
+komponen dalam DOM disebut DOM tree
+
+komponen dalam DOM
+>elemen html
+>atribut
+>text
+>dll
+
+DOM dapat dimanipulasi (diubah,dihapus) menggunakan Javascript
