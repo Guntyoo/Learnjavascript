@@ -1,0 +1,50 @@
+>DOM tree adalah representasi dari bagian document(dalam bentuk htm,css,dll) yang diambil 
+dan dikelola seperti berbentuk sebuah pohon.
+
+>setiap balok/bagan dalam dom tree disebut node
+
+>tipe tipe node
+-elemen(elemen HTML)
+-Atribut
+-text(text)
+-CData section
+-Entity reference
+-Entity
+-procesing insturction
+-comment
+-document type
+-document fragment
+-document  
+-Notation
+
+>untuk pemula fokuskan ke bagian elemen,text,document.
+
+>ada dua tipe node yang harus diketahui
+ Node list
+ penjelasan:
+ NodeList adalah kumpulan node dokumen yang menyerupai larik. NodeList dapat diakses berdasarkan nomor indeksnya, dimulai dari 0.
+
+ HTML collection
+ HTMLCollection adalah kumpulan elemen HTML yang berbentuk seperti array. Elemen-elemen dalam koleksi ini dapat diakses berdasarkan indeks, nama, atau ID. Serta HTML colelction hanya berisi elemen HTML saja jika ada yang bukan html maka akan dimasukan kedalam node list
+
+ Nodelist VS Html Collection:
+-Kedua nya merupakan kumpulan dari Node.
+-Kedua nya strukturnya memiliki cara kerja seperti array.
+-NodeList dapat berisi node apapun, sedangkan HTML collection hanya berisi elemen HTMl saja.
+-HTML collection bersifat LIVE sedangkan Nodelist bersifat tidak.
+
+Struktur Hirarki dalam DOM
+ >root node
+adalah node yang menjadi sumber dari segala node yang ada didalam DOM
+cth(document)
+ >Parent node
+adalah node yang satu tingkat dari node yang lain 
+cth(body adalah parent node dari div,h1,p,a)
+ >chidlern node
+adalah node yang berada dibawah satu tingkat dari node yang lain
+cth(h1 adalah childern node dari body)
+ >siblings node
+adalah saudara dari child node yang memiliki parent yang sama
+cth(h1 dan p adalah siblings dari body)
+ >Decendent node
+adalah keturunan dari semua node seperti child,grandson,dll
