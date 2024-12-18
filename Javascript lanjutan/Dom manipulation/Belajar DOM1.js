@@ -19,5 +19,12 @@ for (let i = 0; i < p.length; i++) {
   p[i].style.backgroundColor = "lightblue";
 }
 
+const h1 = document.getElementsByTagName("h1")[0]; //walaupun h1 ini satu namun jika menggunakan tagname maka akan menjadi HTML collection
+//[0] digunakan untuk menelusuri isi Tagname dan H1 berada di index 0 bisa digunakan seperti sebuah element.
+
+
+//document.getElementByClassName ->HTML collection
+const p1 = document.getElementsByClassName('p1')[0];
+p1.innerHTML = "ini diubah dari javascript";
 //bagaimana cara menulusuri element buka console ketik variabel yang sudah dibuat maka akan tampil seluruh
 // isi element
