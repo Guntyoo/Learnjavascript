@@ -18,14 +18,26 @@ li3.style.color = "blue";
 //hasilnya hanya bisa mengembalikan 1 elemen saja karena sifat dari QuerySelector itu sendiri hanya menerima 1 elemen
 //maka dari itu gunakan querySelectorAll
 
-const p = document.querySelectorAll ('p');
+const p = document.querySelectorAll("p");
 //sekarang semua p bisa diselector namun hasilnya bukanlah elemen melainkan NodeList
 //tidak bisa digunakan langsung karena tidak memiliki index,tulis index atau gunakan loop untuk semua p
 for (let i = 0; i < p.length; i++) {
-  p[i].style.color = 'red';
-};
+  p[i].style.color = "red";
+}
 //jika ingin satu saja maka input index dari elemen yang diubah
-p[3].style.fontSize = '20px';
+p[3].style.fontSize = "20px";
+
+//bentuk sederhana manipulasi dom
+
+const pg4 = document.getElementsByTagName("p");
+pg4[3].style.backgroundColor = "lightblue";
+
+//mengubah root node (document) menjadi section a
+const a = document.getElementById("a");
+//selector style
+const p3 = document.querySelectorAll("p");
+p3[2].style.backgroundColor = "orange";
+p3[0].style.backgroundColor = "orange";
 
 //dari segitu banyaknya selectionm= method bagaimana cara memilih nya sehingga bisa digunakan.
 //gunakan sesuai kebutuhan dan ketepatan method yang digunakan contoh elementById dan elementbyTagName memiliki kecepatan yang lebih tinggi dibandingkan lainnya.
