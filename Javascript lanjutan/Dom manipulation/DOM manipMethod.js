@@ -1,5 +1,6 @@
 // ada dua bagian dalam manipulasi DOM
-//manipulasi element(innerHTML,style,dll) dan manipulasi node(menambahkan dan menghilangkan element)
+//manipulasi element(innerHTML,style,dll) 
+//manipulasi node(menambahkan dan menghilangkan element)
 
 //innerHTML
 //method yang mengubah isi dari sebuah html
