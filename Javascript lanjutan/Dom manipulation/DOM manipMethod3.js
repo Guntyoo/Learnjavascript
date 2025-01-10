@@ -11,6 +11,9 @@ const vas = document.createElement("p"); //element p sudah ditambahkan dalam mem
 //membuat text berisi "bunga"
 const textBaru = document.createTextNode("bunga"); //membuat textbaru namun masi saling synergy
 
+//.appendChild(elemen yang ingin dimasukkan) //
+//berfungsi sebagai memasukan elemen ke elemen lain
+
 //memasukan text kedalam p
 
 vas.appendChild (textBaru);  //p menambahkan text baru
