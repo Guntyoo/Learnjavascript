@@ -25,3 +25,21 @@ const SecA = document.getElementById ('a');
 //masukan vas ke secA
 
 SecA.appendChild (vas);
+
+
+//how to use insertBefore
+
+
+const liBaru = document.createElement ('li');  //create new elemen
+
+
+const teksLiBaru = document.createTextNode ('item baru'); //create new text
+
+liBaru.appendChild(teksLiBaru);  //insert new text to new elemen
+
+//scope Element 
+const ul = document.querySelector('section#b ul'); //scope to b->ul
+const li2 = ul.querySelector('li:nth-child(2)');  //scope to ul->li:nth:child(psudo class)
+
+//use insertBefore
+ul.insertBefore(liBaru,li2);
