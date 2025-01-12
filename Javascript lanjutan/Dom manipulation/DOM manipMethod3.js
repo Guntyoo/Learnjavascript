@@ -43,3 +43,5 @@ const li2 = ul.querySelector('li:nth-child(2)');  //scope to ul->li:nth:child(ps
 
 //use insertBefore
 ul.insertBefore(liBaru,li2);
+
+//rest dulu bang
