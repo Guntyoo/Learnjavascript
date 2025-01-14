@@ -9,14 +9,14 @@ const vas = document.createElement("p"); //element p sudah ditambahkan dalam mem
 //document.createTextNode ()
 
 //membuat text berisi "bunga"
-const textBaru = document.createTextNode("bunga"); //membuat textbaru namun masi saling synergy
+const PBaru = document.createTextNode("bunga"); //membuat textbaru namun masi saling synergy
 
 //.appendChild(elemen yang ingin dimasukkan) //
 //berfungsi sebagai memasukan elemen ke elemen lain
 
 //memasukan text kedalam p
 
-vas.appendChild (textBaru);  //p menambahkan text baru
+vas.appendChild (PBaru);  //p menambahkan text baru
 
 //membuat section a karena ingin dimasukan diakhir section a
 
@@ -44,4 +44,28 @@ const li2 = ul.querySelector('li:nth-child(2)');  //scope to ul->li:nth:child(ps
 //use insertBefore
 ul.insertBefore(liBaru,li2);
 
-//rest dulu bang
+//remove child
+
+const link = document.getElementsByTagName('a')[0]; //scope ahref
+
+
+SecA.removeChild(link);   //remove child(parentnode.removeChild(v))
+
+
+//replaceChild
+
+const secB = document.getElementById('b');  //scope b
+const Plama = secB.querySelector('p');  //scope p4
+
+//buat elemen untuk diganti
+const h2Baru = document.createElement ('h2'); 
+const teksH2Baru = document.createTextNode ('INI DIUBAH MELALUI JS!');
+
+h2Baru.appendChild(teksH2Baru);
+
+secB.replaceChild(h2Baru,Plama);   //replaceChild=parentnode.replaceChild(elemenbaru,elemenlama)
+
+//sign
+vas.style.backgroundColor = 'lightgreen';
+liBaru.style.backgroundColor = "lightgreen";
+h2Baru.style.backgroundColor = "lightgreen";
