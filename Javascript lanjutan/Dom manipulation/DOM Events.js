@@ -11,3 +11,16 @@ p4.addEventListener('click',function() {
     li.appendChild(itemBaru);
     ul.appendChild(li);
 });
+
+//perbedaan event handler dengan addEventListener
+//event handler hanya bisa menyimpan 1 event,jika ada event baru dalam satu blok 
+// maka event sebelumnya akan tertimpa dengan event baru
+//cth:
+const p3 = document.querySelector('.p3');
+p3.onclick = function () {
+    p3.addEventListener('click',function() {
+        p3.style.backgroundColor = 'lightblue';
+    })};
+    p3.addEventListener('click',function () {
+        p3.style.color = 'red';
+    });
