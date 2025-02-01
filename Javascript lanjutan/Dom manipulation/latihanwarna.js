@@ -51,3 +51,5 @@ Biru.addEventListener("input", function () {
 
 //input adalah sebuah event yang digunakan untuk mengambil inputan dari user
 // value digunakn untuk mengambil nilai dari object yang telah dibuat dan di input dari user
+
+//rest
