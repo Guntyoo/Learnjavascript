@@ -52,4 +52,12 @@ Biru.addEventListener("input", function () {
 //input adalah sebuah event yang digunakan untuk mengambil inputan dari user
 // value digunakn untuk mengambil nilai dari object yang telah dibuat dan di input dari user
 
-//rest
+
+
+//membuat sebuah event ketika mouse digerakkan akan merubah warna background
+// 1. tangkap posisi mouse ketika digerakkan
+document.body.addEventListener("mousemove", function (event) {
+  const xPos = Math.round((event.clientX / window.innerWidth) * 255);     // 2. tangkap sumbu x dan y yang digunakan sebagai parameter warna cth: console.log(event.clientX, event.clientY)
+  const yPos = Math.round((event.clientY / window.innerHeight) * 255);    // 3. ukuran browser digunakan sebagai patokan ukuran lebar dan tinggi x dan y
+  document.body.style.backgroundColor = "rgb(" + xPos + "," + yPos + ",100)";
+});
