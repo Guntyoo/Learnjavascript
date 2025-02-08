@@ -1,50 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dom Selection</title>
-  <style>
-    * { 
-        border: 2px solid #dedede; 
-        padding: 15px; 
-        margin: 15px; 
-    }
-    html { 
-      margin: 0;
-      padding: 0;
-    }
-    body { 
-      max-width: 600px;
-      margin: 30px auto;
-      font-family: sans-serif;
-      color: #333;
-    }
-    
-    .biru-muda {background-color: lightblue; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-
-  <h1 id="judul">Hello World</h1>
-  <div id="container">
-      <section id="a">
-          <p class="p1" onclick="ubahWarna">paragraf 1</p>
-          <a href="http://instagram.com/sandhikagalih">Instagram Sandhika Galih</a>
-          <p class="p2">paragraf 2</p>
-          <p class="p3">paragraf 3</p>
-      </section>
-      <section id="b">
-        <!--cara menggunakan selector dalam css-->
-        <!--bagaimana cara selector p4 dalam section b dengan section #b    -->
-          <p>paragraf 4</p>
-          <ul> <!--bagaimana cara selector li baris ke dua yaitu menggunakan sudo class-->
-              <li>item 1</li>
-              <li>item 2</li>
-              <li>item 3</li>
-          </ul>
-      </section>
-  </div>
-
-<script src="DOM Events.js"></script>
+    
+    <h1>Suwit Jawa v2.0</h1>
+    <div class="container">
+        <div class="area-komputer">
+            <img src="img/gajah.png" class="img-komputer">
+        </div>
+        <div class="info"></div>
+        <div class="area-player">
+            <ul>
+                <li>
+                    <img src="img/gajah.png" class="gajah">
+                </li>
+                <li>
+                    <img src="img/orang.png" class="orang">
+                </li>
+                <li>
+                    <img src="img/semut.png" class="semut">
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
