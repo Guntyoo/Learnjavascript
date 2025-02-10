@@ -1,8 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
+/* Reset CSS */
 html,
 body,
 div,
@@ -91,6 +87,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -105,17 +102,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -123,17 +124,21 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 /* Suwit Jawa 2.0 */
-
 body {
-  background-image: url(img/bg.png);
-  font-family: arial;
+  background-image: url("img/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
 }
+
 h1 {
   font-size: 60px;
   font-weight: bold;
@@ -167,7 +172,6 @@ h1 {
   width: 560px;
   height: 250px;
   margin: 5px auto;
-  background-color: lightblue;
   background: linear-gradient(
     to bottom,
     rgba(179, 220, 237, 1) 0%,
@@ -183,7 +187,6 @@ h1 {
   width: 560px;
   height: 250px;
   margin: 5px auto;
-  background-color: lightgreen;
   background: linear-gradient(
     to bottom,
     rgba(210, 255, 82, 1) 0%,
