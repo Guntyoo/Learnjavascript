@@ -8,7 +8,7 @@ function getLogicComp () {
 };
 
 //rules
-function LogicHasil (comp,player) {
+function Rules (comp,player) {
     if (player == comp) return "SERI!";
     if (player == "gajah") return (comp == "orang") ? "MENANG!" : "KALAH!";
     if (player == "orang")return (comp == "gajah") ? "KALAH!" : "MENANG!";
@@ -20,20 +20,26 @@ function LogicHasil (comp,player) {
         GPlayer.addEventListener('click', function () {
             const getpilihancomp = getLogicComp();
             const getpilihanplayer = GPlayer.className;
-            console.log(getpilihancomp);
-            console.log(getpilihanplayer);
+            const gethasil = Rules(getpilihancomp,getpilihanplayer);
+            console.log('comp : ' +  getpilihancomp);
+            console.log('player : ' + getpilihanplayer);
+            console.log('hasil : ' + gethasil);    //result
         });
     const OPlayer = document.querySelector(".orang");
         OPlayer.addEventListener("click", function () {
             const getpilihancomp = getLogicComp();
             const getpilihanplayer = OPlayer.className;
-            console.log(getpilihancomp);
-            console.log(getpilihanplayer);
-    });
+            const gethasil = Rules(getpilihancomp, getpilihanplayer);
+            console.log("comp : " + getpilihancomp);
+            console.log("player : " + getpilihanplayer);
+            console.log("hasil : " + gethasil);   //result
+        });
     const SPlayer = document.querySelector(".semut");
         SPlayer.addEventListener("click", function () {
             const getpilihancomp = getLogicComp();
             const getpilihanplayer = SPlayer.className;
-            console.log(getpilihancomp);
-            console.log(getpilihanplayer);
+            const gethasil = Rules(getpilihancomp, getpilihanplayer);
+            console.log("comp : " + getpilihancomp);
+            console.log("player : " + getpilihanplayer);
+            console.log("hasil : " + gethasil);   //result
     });
