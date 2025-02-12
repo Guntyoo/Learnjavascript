@@ -16,7 +16,15 @@ function LogicHasil (comp,player) {
 };
 
 //getplayer
-const GPlayer = document.querySelector('.gajah');
+    const GPlayer = document.querySelector('.gajah');
     GPlayer.addEventListener('click', function () {
             alert('test');
         });
+    const OPlayer = document.querySelector(".orang");
+    OPlayer.addEventListener("click", function () {
+      alert("test");
+    });
+    const SPlayer = document.querySelector(".semut");
+    SPlayer.addEventListener("click", function () {
+      alert("test");
+    });
