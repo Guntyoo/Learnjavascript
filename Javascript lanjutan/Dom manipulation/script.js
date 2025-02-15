@@ -21,25 +21,28 @@ function Rules (comp,player) {
             const getpilihancomp = getLogicComp();
             const getpilihanplayer = GPlayer.className;
             const gethasil = Rules(getpilihancomp,getpilihanplayer);
-            console.log('comp : ' +  getpilihancomp);
-            console.log('player : ' + getpilihanplayer);
-            console.log('hasil : ' + gethasil);    //result
+            const imgcomp = document.querySelector('.img-komputer');
+            imgcomp.setAttribute('src', 'img/' + getpilihancomp + '.png');
+            const info = document.querySelector('.info');
+                info.innerHTML =  gethasil;
         });
     const OPlayer = document.querySelector(".orang");
         OPlayer.addEventListener("click", function () {
             const getpilihancomp = getLogicComp();
             const getpilihanplayer = OPlayer.className;
             const gethasil = Rules(getpilihancomp, getpilihanplayer);
-            console.log("comp : " + getpilihancomp);
-            console.log("player : " + getpilihanplayer);
-            console.log("hasil : " + gethasil);   //result
+            const imgcomp = document.querySelector(".img-komputer");
+                imgcomp.setAttribute("src", "img/" + getpilihancomp + ".png");
+                    const info = document.querySelector(".info");
+                        info.innerHTML = gethasil;
         });
     const SPlayer = document.querySelector(".semut");
         SPlayer.addEventListener("click", function () {
             const getpilihancomp = getLogicComp();
             const getpilihanplayer = SPlayer.className;
             const gethasil = Rules(getpilihancomp, getpilihanplayer);
-            console.log("comp : " + getpilihancomp);
-            console.log("player : " + getpilihanplayer);
-            console.log("hasil : " + gethasil);   //result
+            const imgcomp = document.querySelector(".img-komputer");
+                imgcomp.setAttribute("src", "img/" + getpilihancomp + ".png");
+                    const info = document.querySelector(".info");
+                        info.innerHTML = gethasil;
     });
