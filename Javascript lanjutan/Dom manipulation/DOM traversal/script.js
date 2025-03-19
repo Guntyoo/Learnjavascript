@@ -22,6 +22,13 @@ close.forEach(function (el) {
     })
 })
 
+const cards = document.querySelectorAll('.card');
+cards.forEach(function (card) {
+    card.addEventListener('click',function (e) {
+        alert('ok');
+    })
+})
+
 //parantElement menampilkan parent dari element yang di cari
 //e.target menampilkan objek yang di klik
 
