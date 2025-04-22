@@ -28,14 +28,14 @@ body {
     cursor:pointer;
 }
 
-@keyframes fadeIn {
+@keyframes fade {
     to {
-        opacity: 1s;
+        opacity: 1;
     }
     
 }
 
 .fade {
     opacity:0;
-    animation: fadeIn 0.5sff;
+    animation: fade 0.5s forwards;
 }
